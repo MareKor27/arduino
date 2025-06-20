@@ -40,7 +40,7 @@ void loop() {
   rightValue = analogRead(sensorRightPin);
   diff = leftValue - rightValue;
 
-  Serial.print("L: "+String(leftValue)+" ("+String(diff)+") "+String(rightValue)+":R");
+  Serial.println("L: "+String(leftValue)+" ("+String(diff)+") "+String(rightValue)+":R");
 
   // Interpret light direction
   if (diff > 200) {
