@@ -10,7 +10,8 @@ This Arduino project allows you to control a servo motor in two modes:
 - Arduino board
 - Servo motor (connected to pin 5)
 - Push button (connected to pin 12)
-- Potentiometer (connected to A5)
+- Potentiometer 5k (connected to A5)
+- LM7805 5V voltage regulator
 - USB for serial communication
 
 ## How It Works
@@ -24,3 +25,4 @@ This Arduino project allows you to control a servo motor in two modes:
 
 - The button uses internal pull-up (`INPUT_PULLUP`), so it should be connected to GND when pressed.
 - Angle inputs outside the 0–180 range are rejected in manual mode.
+- The **LM7805 5V regulator** is used to ensure a stable 5V power supply for the servo.
