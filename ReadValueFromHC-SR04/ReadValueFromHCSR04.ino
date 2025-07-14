@@ -52,7 +52,7 @@ void setup() {
 
 void loop() {
   delay(500);
-  zakres(270, 278);
+  range(270, 278);
 }
 
 
